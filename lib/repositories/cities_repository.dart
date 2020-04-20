@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_combos_aninhados/models/city_model.dart';
+import 'package:mobx_animated/models/city_model.dart';
 
 class CitiesRepository {
   

@@ -1,9 +1,9 @@
 import 'package:combos/combos.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_combos_aninhados/models/states_model.dart';
-import 'package:flutter_combos_aninhados/repositories/cities_repository.dart';
-import 'package:flutter_combos_aninhados/repositories/states_repository.dart';
+import 'package:mobx_animated/models/states_model.dart';
 import 'package:mobx/mobx.dart';
+import 'package:mobx_animated/repositories/cities_repository.dart';
+import 'package:mobx_animated/repositories/states_repository.dart';
 
 import 'models/city_model.dart';
 part 'home_controller.g.dart';

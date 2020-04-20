@@ -1,16 +1,11 @@
-import 'dart:convert';
+import 'package:mobx_animated/models/states_model.dart';
 
-import 'package:flutter/services.dart';
-import 'package:flutter_combos_aninhados/models/city_model.dart';
-
-class CitiesRepository {
+class StateRepository {
   
-  Future<List<CityModel>> getCitiesByState(String state) async {
-    var jsonFile = await rootBundle.loadString('assets/cidades.json');
-    List<dynamic> cities = json.decode(jsonFile) as List;
-    return cities
-      .map((c) => CityModel.fromMap(c))
-      .where((c) => c.state == state)
-      .toList();
+  List<StateModel> findAllStates() {
+    return [
+      StateModel(id: 'SP', name: 'São Paulo'),
+      StateModel(id: 'MG', name: 'Minas Gerais'),
+    ]; 
   }
 }
